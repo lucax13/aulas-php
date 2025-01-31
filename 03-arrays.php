@@ -14,7 +14,7 @@
 
 <?php
 //sintaxe com colchetes
-$banda = ["savatege", "rush", "slayer"];
+$banda = ["savatege", "rush", "slayer","bon jovi"];
 
 //sintaxe com função array()
 $curso = array("HTML5", "node.js", "php", "sql");
