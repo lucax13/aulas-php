@@ -45,6 +45,12 @@ $arrayUsuario = (array) $usuario;
    <pre><?=var_dump($arrayUsuario)?></pre>
 
 
+   <h2></h2>
+<?php
+$aluno = ["nome" => "fulano", "sobrenome" => "da silva"];
+
+$objAluno = (object)
+?>
 
 
 
