@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,14 +45,16 @@ $arrayUsuario = (array) $usuario;
    <pre><?=var_dump($arrayUsuario)?></pre>
 
 
-   <h2></h2>
+   <h2>convertendoarray associativo em objeto</h2>
+
 <?php
 $aluno = ["nome" => "fulano", "sobrenome" => "da silva"];
 
-$objAluno = (object)
+$objAluno = (object) $aluno;
 ?>
 
-
+    <h3>analisandoo objeto gerado a partir de um array</h3>
+    <pre><?=var_dump($objAluno)?></pre>
 
 
 
