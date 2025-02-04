@@ -32,8 +32,17 @@ $usuario -> telefone = ["11 965417890"];
     <p>Celular: <?=$usuario->telefone[0] ?></p>
     <hr>
 
-    
+
+<h2>convertendo um objeto em um array associativo</h2> 
+
+
+<?php
+
+$arrayUsuario = (array) $usuario;
+?>
    
+   <h3>analisando o array  gerado a partir de um objeto</h3>
+   <pre><?=var_dump($arrayUsuario)?></pre>
 
 
 
