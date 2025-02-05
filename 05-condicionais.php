@@ -45,7 +45,7 @@ $qtdCritica = 3; // minimo necessario
     }
 
  } else{
-    echo "<p class = normal>estoque normal</p>";
+    echo "<p class=\"normal\">estoque normal</p>";
  }
 
 ?>
