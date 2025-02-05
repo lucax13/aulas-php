@@ -79,15 +79,18 @@
     <?php
     $idade = 15;
     if ($idade <= 12) {
-        echo "<p>Criança</p>";
+    
+        $texto = "Criança";
     } elseif ($idade <= 17) {
-        echo "<p>Adolescente</p>";
+        $texto = "Adolescente";
     } elseif ($idade <= 59) {
-        echo "<p>adulto</p>";
+        $texto = "adulto";
     } else {
-        echo "<p>idoso</p>";
+        $texto = "idoso";
     }
     ?>
+
+    <p><?=$texto?></p>
 
 
 
