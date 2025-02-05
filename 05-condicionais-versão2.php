@@ -79,7 +79,6 @@
     <?php
     $idade = 15;
     if ($idade <= 12) {
-    
         $texto = "Criança";
     } elseif ($idade <= 17) {
         $texto = "Adolescente";
