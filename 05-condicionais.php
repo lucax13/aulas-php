@@ -28,7 +28,7 @@ if($numero > 1) echo "<p>$numero é maior que 1</p>";
 
 ?>    
 
-    <h2>composta</h2>
+    <h2>composta usando <code>if/else</code></h2>
 <?php
 $produto = "Iphone 13";
 $qtdEmEstoque = 10; //o que temos
@@ -54,7 +54,23 @@ $qtdCritica = 3; // minimo necessario
 
 
 <hr>
-    <h2>encadeada</h2>
+    <h2>encadeada usando <code>if/else/else</code></h2>
+<!--verifique a idade de uma pessoa e determine se ela é criança, adolecente, adulto ou idosa.-->
+
+<?php
+$idade = 15;
+if ($idade <= 12){
+    echo "<p>Criança</p>"; 
+} elseif($idade <= 17){
+    echo "<p>Adolescente</p>";
+} elseif($idade <= 59){
+    echo "<p>adulto</p>";
+} else{
+    echo "<p>idoso</p>";
+}
+?>
+
+
 
 </body>
 </html>
