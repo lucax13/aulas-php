@@ -20,11 +20,25 @@ if($numero > 1){
 
 if($numero > 1) echo "<p>$numero é maior que 1</p>";
 
-
 ?>    
 
     <h2>composta</h2>
+<?php
+$produto = "Iphone 13";
+$qtdEmEstoque = 10;
+$qtdCritica = 3;
+ 
+ echo "<h3>$produto</h3>";
+ echo"<h4>unidades de estoque: $qtdEmEstoque </h4>";
 
+ if($qtdEmEstoque < $qtdCritica){
+    echo"<p>é necessário comprar!</p>";
+ } else{
+    echo "<p>estoque normal</p>";
+ }
+
+
+?>
     <h2>encadeada</h2>
 
 </body>
