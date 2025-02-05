@@ -54,7 +54,7 @@ $qtdCritica = 3; // minimo necessario
 
 
 <hr>
-    <h2>encadeada usando <code>if/else/else</code></h2>
+    <h2>encadeada usando <code>if/else/elseif</code></h2>
 <!--verifique a idade de uma pessoa e determine se ela é criança, adolecente, adulto ou idosa.-->
 
 <?php
