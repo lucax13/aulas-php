@@ -53,9 +53,39 @@ for($i = 1; $i <= 10; $i++ ){
 
 <?php
 }
+?>
+<hr>
 
+    <h2>Mini-exercício</h2>
+
+<?php
+$meses = array(
+
+    "Janeiro", 
+    "Fevereiro", 
+    "Março", 
+    "Abril", 
+    "Maio", 
+    "Junho", 
+    "Julho", 
+    "Agosto", 
+    "Setembro", 
+    "Outubro", 
+    "Novembro", 
+    "Dezembro",
+);
 ?>
 
+
+<ol>
+<?php
+for($a = 0; $a < 12; $a++ ){
+?>
+    <li><?=$meses[$a]?></li>
+<?php
+}
+?>
+</ol>
 
 
 
