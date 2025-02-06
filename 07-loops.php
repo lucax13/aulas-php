@@ -95,11 +95,24 @@ for($a = 0; $a < 12; $a++ ){
 $alunos = ["julia","pedro","gabriel"];
 
 foreach( $alunos as $aluno){
-
+?>
+    <p>Nome: <?=$aluno?></p>
+<?php
+}
 ?>
 
-    <p>Nome: <?=$aluno?></p>
+    <h3>acessando array associativo</h3>
+<?php
+$times = [
+    "corinthians" => "Timão",
+    "palmeiras" => "porco",
+    "são paulo" => "tricolor",
+    "santos" => "peixe"
+];
 
+foreach($times as $time => $apelido){
+?>
+    <p>o time <?=$time?> é conhecido como <?=$apelido?></p>
 <?php
 }
 ?>
