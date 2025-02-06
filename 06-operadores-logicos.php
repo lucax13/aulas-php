@@ -14,13 +14,23 @@
 <?php
 $media = 9.5;
 $faltas = 10;
-
+?>
+ 
+<?php
 if($media >= 7 && $faltas <= 10) {
-    echo "<p>Aprovado!</p>";
+?>
+   <p>Aprovado!</p>
+
+<?php
 } else{
-    echo "<p>Reprovado!</p>";
+?>
+    <p>Reprovado!</p>
+
+<?php
 }
 ?>
+
+
 <hr>
     <h2>|| (OU/OR)</h2>
     <p><i>Basta que apenas uma condição seja <b>verdadeira/true</b></i></p>
@@ -30,12 +40,18 @@ $clienteVIP = false;
 $temCupom = true;
 
 if($clienteVIP || $temCupom) {
-    echo "<p>Desconto aplicado!</p>";
-} else {
-    echo "<p>Sem Desconto!</p>";
-}
-
 ?>
+    <p>Desconto aplicado!</p>
+
+<?php
+} else {
+?>
+   <p>Sem Desconto!</p>
+
+ <?php
+}
+?>
+
 <hr>
 
     <h2>! (não/not)</h2>
@@ -44,10 +60,16 @@ if($clienteVIP || $temCupom) {
 <?php
 $usuarioLogado = false;
 
-if(!$usuarioLogado){
-    echo"<a href=\"login.php\">Login<a>";
+if(!$usuarioLogado){  
+?>
+    <a href="login.php">Login<a>
+
+<?php
 }else{
-    echo"<span>Bem vindo ao sistema</span>";
+?>
+    <span>Bem vindo ao sistema</span>
+
+<?php
 }
 ?>
 <hr>
@@ -61,13 +83,17 @@ $estaBebado = false;
 
 
 if($idade >= 18 || $acompanhadoPais  && !$estaBebado) {
-    echo"<p>Entrada permitida</p>";
-} else {
-    echo"<p>Entrada negada!</p>";
-}
-
-
 ?>
+    <p>Entrada permitida</p>
+<?php
+} else {
+?>
+    <p>Entrada negada!</p>
+<?php
+}
+?>
+
+
 
 </body>
 </html>
