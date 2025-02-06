@@ -107,7 +107,7 @@ $times = [
     "corinthians" => "Timão",
     "palmeiras" => "porco",
     "são paulo" => "tricolor",
-    "santos" => "peixe"
+    "santos" => "peixe",
 ];
 
 foreach($times as $time => $apelido){
