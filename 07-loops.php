@@ -43,10 +43,18 @@ do{
 } while($j <= 3);
 ?>
 
-
-
     <h2>For (para)</h2>
     <p>executa ações por uma <b>quantidade determinada</b>de vezes.</p>
+<?php
+for($i = 1; $i <= 10; $i++ ){
+?>
+
+    <p><code>i</code> Vale: <b><?=$i?></b></p>
+
+<?php
+}
+
+?>
 
 
 
