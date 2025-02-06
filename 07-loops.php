@@ -117,5 +117,21 @@ foreach($times as $time => $apelido){
 }
 ?>
 
+    <h3>acessando objeto</h3>
+<?php
+$livro = new stdClass();
+$livro->titulo = "velozes e furiosos";
+$livro->autor = "J.R.R. tolkien";
+$livro->ano = 2006;
+
+foreach($livro as $propriedades => $valor){
+?>
+    <p><?=$propriedades?>: <b><?=$valor?></b></p>
+
+<?php
+}
+?> 
+
+
 </body>
 </html>
