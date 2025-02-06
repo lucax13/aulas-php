@@ -86,8 +86,23 @@ for($a = 0; $a < 12; $a++ ){
 }
 ?>
 </ol>
+<hr>
 
+    <h2>FOREACH (para cada)</h2>
+    <p>Versão simplificada do loop for e bom de mais facil de usar arrays e objetos.</p>
 
+<?php
+$alunos = ["julia","pedro","gabriel"];
+
+foreach( $alunos as $aluno){
+
+?>
+
+    <p>Nome: <?=$aluno?></p>
+
+<?php
+}
+?>
 
 </body>
 </html>
