@@ -11,6 +11,20 @@
 
     <h2>&& (E)</h2>
 
+<?php
+$media = 9.5;
+$faltas = 10;
+
+if($media >= 7 && $faltas <= 10) {
+    echo "<p>Aprovado!</p>";
+} else{
+    echo "<p>Reprovado!</p>";
+}
+?>
+
+
+
+
     <h2>|| (OU/OR)</h2>
 
     <h2>! (não/not)</h2>
