@@ -45,12 +45,36 @@
     <hr>
     <?php
     $linguagens = [
-        "HTML" => "Estruturação",
-        "CSS" => "Estilos",
-        "JS" => "Comportamentos",
-        "PHP" => "Back-End",
-        "SQL" => "Manipulação de Dados",
-        "Java" => "Desenvolvimento de Softwares"
+        [
+            "id" => 1,
+            "nome" => "HTML",
+            "descricao" => "Estruturação"
+        ],
+        [
+            "id" => 2,
+            "nome" => "CSS",
+            "descricao" => "Estilos"
+        ],
+        [
+            "id" => 3,
+            "nome" => "JS",
+            "descricao" => "Comportamentos"
+        ],
+        [
+            "id" => 4,
+            "nome" => "PHP",
+            "descricao" => "Back-End"
+        ],
+        [
+            "id" => 5,
+            "nome" => "SQL",
+            "descricao" => "Manipulação de dados"
+        ],
+        [
+            "id" => 6,
+            "nome" => "Java",
+            "descricao" => "Softwares"
+        ],
     ];
     
 
@@ -61,13 +85,13 @@
             <th>Linguagem</th>
             <th>Função</th>
         </tr>
-        <?php $id = 1; foreach ($linguagens as $linguagem => $funcao) { ?>
+        <?php foreach ($linguagens as $linguagem => $funcao) { ?>
             <tr>
-                <td><?=$id?></td>
-                <td><?= $linguagem ?></td>
-                <td><?= $funcao ?></td>
+                <td><?=$linguagem["id"]?></td>
+                <td><?= $linguagem["nome"] ?></td>
+                <td><?= $funcao["descricao"] ?></td>
             </tr>
-        <?php $id++; } ?>
+        <?php } ?>
     </table>
 </body>
 
