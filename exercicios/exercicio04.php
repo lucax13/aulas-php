@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de Linguagens</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+
     <style>
-        body {
+        /*body {
             font-family: Arial, sans-serif;
             text-align: center;
         }
@@ -36,7 +41,7 @@
 
         tr:hover {
             background-color: #ddd;
-        }
+        }*/
     </style>
 </head>
 <body>
@@ -52,23 +57,27 @@
         "SQL" => "Manipulação de Dados",
         "Java" => "Desenvolvimento de Softwares"
     ];
+    ?>
+
     
 
-    ?>
-    <table>
+    <table class="table table-striped-columns">
         <tr>
             <th>ID</th>
             <th>Linguagem</th>
             <th>Função</th>
         </tr>
         <?php $id = 1; foreach ($linguagens as $linguagem => $funcao) { ?>
-            <tr>
-                <td><?=$id?></td>
-                <td><?= $linguagem ?></td>
-                <td><?= $funcao ?></td>
+            <tr  class="table-active">
+                <td class="table-primary"><?=$id?></td>
+                <td class="table-secondary"><?= $linguagem ?></td>
+                <td class="table-success"><?= $funcao ?></td>
             </tr>
         <?php $id++; } ?>
     </table>
-</body>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+ crossorigin="anonymous"></script>
+</body>
 </html>
