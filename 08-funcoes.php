@@ -97,19 +97,28 @@ function exibirSaudacao($mensagem, $pessoa = ""){
     <h2>Indução de tipos de dados</h2>
 
 <?php
-function verificarNegativo($valor){
+/*indicando que o parametro deve ser do tipo inteiro e que o retorno da função deve ser do tipo string.*/
+function verificarNegativo(int $valor):string {
     if( $valor  < 0){
         return "é negativo";
     } else {
         return "não é negativo";
     }
 }
+ /* tipos comuns para uso com indução string -> texto/ caracteres em geral 
+ int -> numeros inteiros
+ float -> números com casas decimais
+ array -> vetor/matriz 
+ object -> objeto*/
 ?>
-
+   
     <p>Número 10: <?=verificarNegativo(10)?></p>
     <p>Número -10: <span class="badge text-bg-danger"><?=verificarNegativo(-10)?></span></p>
 
-        </div>
+<!--o codigo abaixo gera erro relacionando a indução de tipos -->
+    <!--<p>Teste de valor/parametro errado: <?=verificarNegativo("Paulo henrique")?></p>-->
+  
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
