@@ -136,6 +136,17 @@ $formatarPreco = function(float $valor):string {
     <p><?=$formatarPreco(1500.88)?></p>
     <p><?=$formatarPreco(10500.2598)?></p>
     <p><?=$formatarPreco(-1000)?></p>
+    <hr>
+
+    <h2>arrow function (necessario usar fn)</h2>
+<?php
+//útil para funções simples de uma única linha e com return implicito
+$dobrarValor = fn(int $valor):int => $valor *2;
+?>
+
+    <p><?=$dobrarValor(10)?></p>
+    <p><?=$dobrarValor(100)?></p>
+
 
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
