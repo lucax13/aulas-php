@@ -23,7 +23,21 @@ function exibirDadosDoAutor(){
 }?>
 
     <h3>chamada do procedimento</h3>
-    <div><?= exibirDadosDoAutor()?></div>
+    <?= exibirDadosDoAutor()?>
+
+    <h3>outras chamadas</h3>
+<?php
+$valor = 500;
+if($valor > 1000){
+    exibirDadosDoAutor();
+}
+?>
+    <div><?=exibirDadosDoAutor()?></div>
+    <ul>
+        <li><?=exibirDadosDoAutor()?></li>
+        <li><b><?=exibirDadosDoAutor()?></b></li>
+    </ul>
+
         <hr>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
