@@ -18,6 +18,7 @@ $nota = 10;
 $nota1 = 6;
 $nota2 = 8;
 
+
     $media = ($nota1 + $nota + $nota2) / 3;
 
     if($media >= 7 ){
@@ -34,9 +35,13 @@ $nota2 = 8;
     <hr>
 
 <?php 
-function somar($nota, $nota1, $nota2){
+function calculoMedia($nota, $nota1, $nota2){
     return ($nota + $nota1 + $nota2) / 3;
+?>
 
+    <p>Sua Media: <?=$media?></p>
+
+<?php
 }
 ?>
 
