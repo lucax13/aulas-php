@@ -80,10 +80,34 @@ $resultado3 = somar(2250, 754.96);
 
 <?php if(somar(10, 50) < 500){ ?>
     <p>joão reprovado..</p>
-<?php }?>
+<?php } ?>
 
+    <h3>Função com parâmetros opcionais</h3>
+<?php
+function exibirSaudacao($mensagem, $pessoa = ""){
+    return "Olá, $mensagem $pessoa";
+}
+?>
 
+    <p>mensagem 1: <?=exibirSaudacao("Bom dia", "joão")?></p>
+    <p>mensagem 2: <?=exibirSaudacao("Boa tarde")?></p>
 
+    <hr>
+
+    <h2>Indução de tipos de dados</h2>
+
+<?php
+function verificarNegativo($valor){
+    if( $valor  < 0){
+        return "é negativo";
+    } else {
+        return "não é negativo";
+    }
+}
+?>
+
+    <p>Número 10: <?=verificarNegativo(10)?></p>
+    <p>Número -10: <span class="badge text-bg-danger"><?=verificarNegativo(-10)?></span></p>
 
         </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
