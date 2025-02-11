@@ -99,8 +99,16 @@ function exibirSaudacao($mensagem, $pessoa = ""){
 <?php
 /*indicando que o parametro deve ser do tipo inteiro e que o retorno da função deve ser do tipo string.*/
 function verificarNegativo(int $valor):string {
+    if( $valor  < 0){
+        return "é negativo";
+    } 
 
-    return $valor < 0 ? "é negativo" : "não é negativo";
+    /*early return (retorno antecipado)*/
+    return "não é negativo";
+
+    /*ao usar early return, podemos em algumas situações evitar a necessidade do else 
+    (condicional composta). neste exmplo, se a condição for true o primeiro return é executado. se não for, na sequência será 
+    feito o segundo return*/
 }
  /* tipos comuns para uso com indução string -> texto/ caracteres em geral 
  int -> numeros inteiros
