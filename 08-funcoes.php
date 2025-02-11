@@ -63,7 +63,7 @@
         <p>resultado 2: <?= somar(23, 107) ?></p>
 
 <?php
-//chamando a função e guardando o resultado em uma varavel
+//chamando a função e guardando o resultado em uma variavel
 $resultado3 = somar(2250, 754.96);
 ?>
 
