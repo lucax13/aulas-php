@@ -102,7 +102,7 @@ function verificarNegativo(int $valor):string {
     if( $valor  < 0){
         return "é negativo";
     } 
-
+ 
     /*early return (retorno antecipado)*/
     return "não é negativo";
 
