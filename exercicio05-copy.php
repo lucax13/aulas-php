@@ -15,10 +15,41 @@
         <hr>
 
 <?php
+//$media = calculoMedia($nota1, $nota2, $nota3);
+//$situacao = verificarSituacao($media);
 
-$nota1 = 10;
-$nota2 = 8;
-$nota3 = 3;
+$listaAlunos = [
+    [
+        "nome" => "luan",
+        "nota1" => 8,
+        "nota2" => 5,
+        "nota3" => 0.89
+    ],
+    [
+        "nome" => "lucas",
+        "nota1" => 8,
+        "nota2" => 10,
+        "nota3" => 7
+    ],
+    [
+        "nome" => "pedro",
+        "nota1" => 6,
+        "nota2" => 5,
+        "nota3" => 0.89
+    ],
+    [
+        "nome" => "iago",
+        "nota1" => 7.4,
+        "nota2" => 5,
+        "nota3" => 9
+    ],
+    [
+        "nome" => "luna",
+        "nota1" => 3,
+        "nota2" => 5,
+        "nota3" => 0.9
+    ],
+];
 
 function calculoMedia(float $valorNota1, float $valorNota2, float $valorNota3):float {
     $resultadoDaMedia = ($valorNota1 + $valorNota2 + $valorNota3) / 3;
@@ -32,17 +63,23 @@ function verificarSituacao(float $valorMedia):string{
         return "reprovado";
     }
 }
-
-$media = calculoMedia($nota1, $nota2, $nota3);
-$situacao = verificarSituacao($media);
 ?>
 
-    <p>Media <b><?=$media?></b></p>
+<?php foreach( $listaAlunos as $aluno) {
+    $media = calculoMedia($aluno["nota1"], $aluno["nota2"], $aluno["nota3"]); 
+    $situacao = verificarSituacao($media);   
+?>
+
+
+    <h2> <?=$aluno["nome"]?></h2>
+    <p>Media: <b><?=number_format($media, 2, ",")?></b></p>
     <p>Situação:
-        <b class="badge text-bg-"><?=$media >= 7 ? 'success' : 'danger'?>
-        <?=$situacao?>
-    </b>
+        <b class="badge text-bg-<?=$media >= 7 ? 'success': 'danger'?>">
+            <?=$situacao?>
+        </b>
     </p>
+
+<?php } ?>
 
     </div> 
 </body>
