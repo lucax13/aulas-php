@@ -18,40 +18,37 @@ $nota = 10;
 $nota1 = 8;
 $nota2 = 3;
 
+ $media = calculoMedia($nota, $nota1, $nota2);
 
- //   $media = ($nota1 + $nota + $nota2) / 3;
- ?>   
-
-<!--
     if($media >= 7 ){
-
-
-        <p>Sua Nota é: <//?=$media?> <span class="badge text-bg-primary">Aprovado</span></p>
-
-<//?php
+ ?> 
+        <p>Sua Nota é: <?=$media?> <span class="badge text-bg-primary">Aprovado</span></p>
+<?php
 } else { ?>
-    <p>Sua Nota é: <//?=$media?> <span class="badge text-bg-danger">Reprovado</span></p>
+    <p>Sua Nota é: <?=$media?> <span class="badge text-bg-danger">Reprovado</span></p>
+<?php } ?>
 
-<//?php } ?>
--->
     <hr>
 
 
 <?php 
-function calculoMedia($nota, $nota1, $nota2){
+function calculoMedia($notas, $notas1, $notas2){
     
-   $media = ($nota + $nota1 + $nota2) / 3;
-    return  $media;
-
-   $notaFinal = ($media >= 7) ? "Aprovado" : "Reprovado";
-?>
-
-<?php
+   $ultimaNota = ($notas + $notas1 + $notas2) / 3;
+    return  $ultimaNota;
 }
-?>
 
-<p>Sua Nota: <?=$media?> <span class="badge text-bg-primary">Aprovado</span></p>
-    <p>Sua Nota é: <?=$media?> <span class="badge text-bg-danger">Reprovado</span></p>
+ $resultado = calculoMedia(1 , 2, 5);
+
+ 
+
+if($resultado >= 7 ){
+    ?> 
+           <p>Sua Nota é: <?=$resultado?> <span class="badge text-bg-primary">Aprovado</span></p>
+   <?php
+   } else { ?>
+       <p>Sua Nota é: <?=$resultado?> <span class="badge text-bg-danger">Reprovado</span></p>
+   <?php } ?>
 
     </div>
 
