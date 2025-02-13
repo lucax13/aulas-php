@@ -135,7 +135,7 @@ $ataqueDeRaqui = "<script>
     </h1>'
 </script>";
 
-//echo $ataqueDeRaqui;
+echo $ataqueDeRaqui;
 
 $ataqueSanitizado = filter_var($ataqueDeRaqui, FILTER_SANITIZE_SPECIAL_CHARS);
 echo $ataqueSanitizado;
