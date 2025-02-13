@@ -76,6 +76,17 @@ extract($aluno);
         <li>Nome: <?=$nome?></li>
         <li>idade: <?=$idade?></li>
     </ul>
+    <hr>
+
+    <h3><code>Array_sum()</code></h3>
+    <p>Somar valores de um array numerico</p>
+<?php
+$valores = [10, 20, 50, 100, 500];
+$total = array_sum($valores);
+?>
+
+    <p>soma dos valores do array: <b><?=$total?></b></p>
+
 
 </div>
 
