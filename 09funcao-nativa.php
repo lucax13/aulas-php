@@ -125,6 +125,21 @@ $emailCorreto = "tiago.lima@gmail.com";
     <p><?=var_dump( filter_var($emailCorreto, FILTER_VALIDATE_EMAIL)  )?></p>
 
     <h3>sanitização</h3>
+<?php
+$ataqueDeRaqui = "<script> 
+    document.body.innerHTML = ' 
+    <h1 style=background:yellow>
+        <marquee loop>
+            Sou raqui 👿👿👿!
+        </marquee>
+    </h1>'
+</script>";
+
+//echo $ataqueDeRaqui;
+
+$ataqueSanitizado = filter_var($ataqueDeRaqui, FILTER_SANITIZE_SPECIAL_CHARS);
+echo $ataqueSanitizado;
+?>
 
 
 </div>
