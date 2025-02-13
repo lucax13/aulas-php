@@ -33,7 +33,19 @@ $fraseBonita = str_replace(["Foda-se","palmeiras"],["corinthians","campeão"], $
 ?>
     <p><?=$fraseFeia?></p>
     <p><?=$fraseBonita?></p>
-    </div>
+    <hr>
+
+    <h3><code>explode()</code></h3>
+    <p>transformar um string em um array</p>
+<?php
+$textosLiguagens = "html,css,js,php,sql";
+$arrayLiguagens = explode(",", $textosLiguagens);
+?>
+
+    <pre><?=var_dump($textosLiguagens)?></pre>
+    <pre><?=var_dump($arrayLiguagens)?></pre>
+
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
