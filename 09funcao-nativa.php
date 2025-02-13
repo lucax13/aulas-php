@@ -141,7 +141,52 @@
         echo $ataqueSanitizado;
         ?>
 
+        <hr>
 
+        <h2>Segurança (Criptografia de dados)</h2>
+
+        <h3><code>Algoritmos e Recursos</code></h3>
+        <ul>
+            <li>MD5</li>
+            <li>SHA-1</li>
+            <li>SHA-256</li>
+            <li><b>password_hash() e password_verify()</b></li>
+        </ul>
+<?php
+//plain text
+$senhaTextopuro = "123senac";
+
+//MD5
+$senhaCodificadaComMD5 = md5($senhaTextopuro);
+
+//SHA-1
+$senhaCodificadaComSHA1 = sha1($senhaTextopuro);
+
+//SHA-256
+$senhaCodificadaComSHA256 = hash('sha256', $senhaTextopuro);
+?>
+
+        <p class="alert alert-warning"><i>Metodos/algoritimos antigos (evite usar)</i></p>
+        <hr>
+    <p>Senha texto puro: <?=$senhaTextopuro?></p>
+    <p>Senha (MD5): <?=$senhaCodificadaComMD5?> - (<?=strlen($senhaCodificadaComMD5)?>)</p>
+        <hr>
+    <p>Senha (SHA-1): <?=$senhaCodificadaComSHA1?> - (<?=strlen($senhaCodificadaComSHA1)?>)</p>
+        <hr>
+    <p>Senha (SHA-256): <?=$senhaCodificadaComSHA256?> - (<?=strlen($senhaCodificadaComSHA256)?>)</p>
+        <hr>
+
+        
+    <p class="alert alert-success"><i>Metodos/algoritimos ideal atual</i></p>
+<?php
+$senhaCodificada = password_hash($senhaTextopuro, PASSWORD_DEFAULT);
+?>       
+
+    <p>senha codificada com <code>password_hash()</code>: 
+        <?=$senhaCodificada?> (<?=strlen($senhaCodificada)?>)
+    </p>
+
+    
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
