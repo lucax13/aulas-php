@@ -44,6 +44,19 @@ $arrayLiguagens = explode(",", $textosLiguagens);
 
     <pre><?=var_dump($textosLiguagens)?></pre>
     <pre><?=var_dump($arrayLiguagens)?></pre>
+    <hr>
+
+    <h2>Arrays</h2>
+    <h3><code>implode()</code></h3>
+    <p>transforma array em string</p>
+
+<?php
+$arrayBandas = ["nirvana", "slayer", "kiss"];
+$textoBandas = implode("-", $arrayBandas);
+?>
+
+    <pre><?=var_dump($arrayBandas)?></pre>
+    <pre><?=var_dump($textoBandas)?></pre>
 
 </div>
 
