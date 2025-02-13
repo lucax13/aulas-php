@@ -176,7 +176,7 @@ $senhaCodificadaComSHA256 = hash('sha256', $senhaTextopuro);
     <p>Senha (SHA-256): <?=$senhaCodificadaComSHA256?> - (<?=strlen($senhaCodificadaComSHA256)?>)</p>
         <hr>
 
-        
+
     <p class="alert alert-success"><i>Metodos/algoritimos ideal atual</i></p>
 <?php
 $senhaCodificada = password_hash($senhaTextopuro, PASSWORD_DEFAULT);
@@ -185,6 +185,18 @@ $senhaCodificada = password_hash($senhaTextopuro, PASSWORD_DEFAULT);
     <p>senha codificada com <code>password_hash()</code>: 
         <?=$senhaCodificada?> (<?=strlen($senhaCodificada)?>)
     </p>
+
+        <h4>comparando a senha informada com a senha codificada</h4>
+
+<?php
+//simulando a digitação de senha num formulario
+$senhaDigitada = "123senc";
+if (password_verify($senhaDigitada, $senhaCodificada)) {
+    echo "Senha correta, pode entrar...";  
+} else {
+    echo "Senha errada! some daqui disgraça";
+}
+?>
 
     
     </div>
