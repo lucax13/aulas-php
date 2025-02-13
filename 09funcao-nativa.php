@@ -16,6 +16,7 @@
 
         <h2>strings</h2>
         <h3><code>trim()</code></h3>
+        <p>remove espaço antes e depois de strings</p>
 <?php
 $texto = "  paulo henrique dev paçoca       ";
 $textoSemEspaco = trim($texto);
@@ -24,8 +25,14 @@ $textoSemEspaco = trim($texto);
 <pre><?=var_dump($textoSemEspaco)?></pre>
 <hr>
 
-    <h3></h3>
-
+    <h3><code>str_replace()</code></h3>
+    <p>permite subistituir partes de um strings.</p>
+<?php
+$fraseFeia = "Foda-se palmeiras";
+$fraseBonita = str_replace(["Foda-se","palmeiras"],["corinthians","campeão"], $fraseFeia);
+?>
+    <p><?=$fraseFeia?></p>
+    <p><?=$fraseBonita?></p>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
