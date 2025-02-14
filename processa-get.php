@@ -11,8 +11,9 @@
 </head>
 <body>
     <div class="container">
-        <h1></h1>
+        <h1>Processamento usando get</h1>
         <hr>
+        <pre><?=var_dump($_GET)?></pre>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
