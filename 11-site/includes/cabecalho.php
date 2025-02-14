@@ -15,7 +15,7 @@
             <h1>Site com PHP</h1>
             <nav>
                 <a href="index.php">Home</a>
-                <a href="curso.php">Cursos</a>
+                <a href="curso.php">Treinamentos</a>
                 <a href="duvida.php">Dúvidas</a>
             </nav>
         </header>
