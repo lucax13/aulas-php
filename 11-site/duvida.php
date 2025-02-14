@@ -1,27 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duvidas - Site com PHP</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<?php include "cabecalho.php";?>
 
 
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Curso - Site com PHP</h1>
-            <nav>
-                <a href="index.php">Home</a>
-                <a href="curso.php">Cursos</a>
-                <a href="duvida.php">Dúvidas</a>
-            </nav>
-        </header>
-        <hr>
-
-        <main>
             <h2>Pagina de Duvidas</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate doloremque doloribus sequi distinctio, sunt non? Et obcaecati vero optio labore eveniet, molestiae corrupti dolore itaque voluptatibus culpa sit error!</p>
             
